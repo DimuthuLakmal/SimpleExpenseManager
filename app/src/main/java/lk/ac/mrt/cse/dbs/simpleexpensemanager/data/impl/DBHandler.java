@@ -57,7 +57,7 @@ public class DBHandler implements Serializable {
             db.execSQL("CREATE TABLE " + DATABASE_TABLE_TRANSACTION +
                             " (" +KEY_ACCOUNT_NO_TRANSACTION_ID+" INTEGER PRIMARY KEY AUTOINCREMENT, "+
                             KEY_ACCOUNT_NO_TRANSACTION+" TEXT NOT NULL, "+
-                            KEY_DATE+" TEXT NOT NULL, "+
+                            KEY_DATE+" DATE NOT NULL, "+
                             KEY_EXPENSE_TYPE+ " TEXT NOT NULL, "+
                             KEY_AMOUNT+" DOUBLE NOT NULL);"
             );
