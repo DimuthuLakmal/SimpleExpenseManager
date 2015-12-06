@@ -34,17 +34,17 @@ public class InMemoryAccountDAO implements AccountDAO {
     private final Map<String, Account> accounts;
 
     public InMemoryAccountDAO() {
-        this.accounts = new HashMap<>();
+        this.accounts = new HashMap<String,Account>();
     }
 
     @Override
     public List<String> getAccountNumbersList() {
-        return new ArrayList<>(accounts.keySet());
+        return new ArrayList<String>(accounts.keySet());
     }
 
     @Override
     public List<Account> getAccountsList() {
-        return new ArrayList<>(accounts.values());
+        return new ArrayList<Account>(accounts.values());
     }
 
     @Override

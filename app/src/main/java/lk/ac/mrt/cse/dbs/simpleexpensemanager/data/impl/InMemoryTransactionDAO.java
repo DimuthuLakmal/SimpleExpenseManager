@@ -32,7 +32,7 @@ public class InMemoryTransactionDAO implements TransactionDAO {
     private final List<Transaction> transactions;
 
     public InMemoryTransactionDAO() {
-        transactions = new LinkedList<>();
+        transactions = new LinkedList<Transaction>();
     }
 
     @Override
